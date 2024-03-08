@@ -11,6 +11,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './mdx-components.tsx',
   ],
   theme: {
     extend: {
@@ -20,9 +21,18 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    hljs: {
+      theme: 'tokyo-night-dark',
+    },
   },
   plugins: [
     addVariablesForColors,
+    require('tailwind-highlightjs')
+  ],
+  safelist: [
+    {
+      pattern: /hljs+/,
+    },
   ],
 };
 
