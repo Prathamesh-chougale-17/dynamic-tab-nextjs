@@ -1,10 +1,10 @@
 import React from "react";
-import MacbookScrollDemo from "./_components/Macbook";
+import TabsDemo from "./_components/AnimatedTabs";
 
 const HomePage = () => {
   return (
     <div>
-      <MacbookScrollDemo />
+      <TabsDemo />
     </div>
   );
 };
