@@ -1,11 +1,7 @@
 import { getCode } from "@/sanity/sanity-util";
 import React from "react";
-import Example from "./example.mdx";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import {
-  github,
-  nightOwl,
-} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Sanitymarkdown = async () => {
   const code = await getCode();
