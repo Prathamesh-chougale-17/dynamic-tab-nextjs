@@ -1,9 +1,5 @@
 import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import Example from "./example.mdx";
-
-import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import Sanitymarkdown from "./sanitymarkdown";
+import GlobeDemo from "@/components/3D/globe";
 const HomePage = () => {
   // const codestring = `"use client";
 
@@ -132,7 +128,7 @@ const HomePage = () => {
   // `;
   return (
     <main>
-      <Sanitymarkdown />
+      <GlobeDemo />
     </main>
   );
 };
