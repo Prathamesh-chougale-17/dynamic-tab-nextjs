@@ -1,5 +1,5 @@
 import React from "react";
-import GlobeDemo from "@/components/3D/globe";
+import QuizPage from "@/components/exp/quiz";
 const HomePage = () => {
   // const codestring = `"use client";
 
@@ -128,7 +128,7 @@ const HomePage = () => {
   // `;
   return (
     <main>
-      <GlobeDemo />
+      <QuizPage />
     </main>
   );
 };
